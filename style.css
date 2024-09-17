@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Content */
+.content {
+  padding: 20px;
+  margin: 20px 0; 
+}
+
+.tmenu {
+  list-style-type: none; /* remove list marks */
+  padding: 0; 
+  margin: 0; 
+  display: flex; /* menu in line (horizontally) */
+  justify-content: center;
+  background-color: rgb(140, 177, 177);
+}
+
+.tmenu li {
+  margin-right: 20px; 
+}
+
+.tmenu li a {
+  text-decoration: none; /* remove link underline */
+  color: #000; 
+}
+
+.tmenu li a:hover {
+  color: #2461a1; /* color when hover links */
+}
