@@ -3,12 +3,6 @@ body{
   padding: 0;
 }
 
-/* Main Content */
-.content {
-  padding: 20px;
-  margin: 20px 0; 
-}
-
 .tmenu {
   list-style-type: none; /* remove list marks */
   padding: 0; 
@@ -16,6 +10,84 @@ body{
   display: flex; /* menu in line (horizontally) */
   justify-content: center;
   background-color: rgb(140, 177, 177);
+  font-size: large;
+  flex-wrap: wrap; /* Allows items to fit across multiple lines */
+}
+
+.tmenu li {
+  margin: 10px; /* Espacing between menu items */
+  display: flex;
+  align-items: center;
+}
+
+.tmenu a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 5px; /* Spacing between link and icon */
+}
+
+
+/* Main Content */
+.content-main {
+  justify-content: center;
+  padding: 20px;
+  margin: 20px 0; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+td {
+  flex: 1 1 200px; /* Ajust according to the user */
+  padding: 10px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+td img {
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* Ajust according to the user */
+}
+
+
+
+.fmenu {
+  list-style-type: none; /* remove list marks */
+  padding: 0; 
+  margin: 0; 
+  display: flex; /* menu in line (horizontally) */
+  justify-content: center;
+  background-color: rgb(140, 177, 177);
+  font-size: large;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.fmenu li {
+  margin: 10px; /* Spacing between menu items */
+  display: flex;
+  align-items: center;
+}
+
+.fmenu a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 5px; /* Spacing between menu icons */
+}
+
+#copyr {
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+  flex-basis: 100%;
+  text-align: center;
 }
 
 .tmenu li {
@@ -29,4 +101,8 @@ body{
 
 .tmenu li a:hover {
   color: #2461a1; /* color when hover links */
+}
+
+.fmenu li a:hover {
+  color: #2461a1; 
 }
