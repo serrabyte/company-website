@@ -1,12 +1,12 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
 .tmenu {
   list-style-type: none; /* remove list marks */
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
   display: flex; /* menu in line (horizontally) */
   justify-content: center;
   background-color: rgb(140, 177, 177);
@@ -26,12 +26,11 @@ body{
   margin-right: 5px; /* Spacing between link and icon */
 }
 
-
 /* Main Content */
 .content-main {
   justify-content: center;
   padding: 20px;
-  margin: 20px 0; 
+  margin: 20px 0;
 }
 
 table {
@@ -54,12 +53,10 @@ td img {
   max-width: 200px; /* Ajust according to the user */
 }
 
-
-
 .fmenu {
   list-style-type: none; /* remove list marks */
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
   display: flex; /* menu in line (horizontally) */
   justify-content: center;
   background-color: rgb(140, 177, 177);
@@ -91,12 +88,12 @@ td img {
 }
 
 .tmenu li {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .tmenu li a {
   text-decoration: none; /* remove link underline */
-  color: #000; 
+  color: #000;
 }
 
 .tmenu li a:hover {
@@ -104,5 +101,56 @@ td img {
 }
 
 .fmenu li a:hover {
-  color: #2461a1; 
+  color: #2461a1;
+}
+
+.au-separate {
+  display: flex;
+  flex-direction: row;
+}
+
+.au-aboutus {
+  display: flex;
+  flex-basis: 65%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2% 0% 10% 0%
+}
+
+.au-aboutus h2 {
+  font-size: 500%;
+}
+
+.au-aboutus p {
+  font-size: 150%;
+  text-align: center;
+}
+
+.au-contact {
+  display: flex;
+  flex-basis: 35%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2% 5% 10% 5%;
+  background-color: #098774;
+  align-items: center;
+}
+
+.au-contact img {
+  width: 50%;
+  height: auto;
+  margin: -5%;
+}
+
+.au-contact h2 {
+  font-size: 400%;
+  height: auto;
+  color: white;
+}
+
+.au-contact p {
+  font-size: 120%;
+  height: auto;
+  color: white;
 }
