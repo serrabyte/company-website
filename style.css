@@ -176,6 +176,158 @@ nav a {
   margin-right: 50px;
 }
 
+.au-separate {
+  display: flex;
+  flex-direction: column;
+}
+
+.au-aboutus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.au-aboutus h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+}
+
+.au-aboutus p {
+  font-size: 18px;
+  font-style: italic;
+  color: #1F2937;
+}
+
+.au-contact {
+  background-color: #E5E7EB;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center
+}
+
+.au-contactmap {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.au-contactmap h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+}
+
+.au-contactadress {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-style: italic;
+  color: #1F2937;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.countrytitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #1F2937;
+  align-items: center;
+  height: 50vh;
+}
+
+.countryinformation {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  align-items: end;
+  margin-right: 10%;
+}
+
+.countryinformation h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+  margin: 0 0 0 0;
+}
+
+.countryinformation p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.countryflag {
+  flex-basis: 50%;
+}
+
+.countryimg {
+  width: 50%;
+  height: auto;
+}
+
+.onecity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.onecityname {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  margin: 0;
+}
+
+.onecityname h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+}
+
+.onecity img {
+  height: 100%;
+}
+
+.onecityname p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+  height: 100%;
+  margin: 0;
+}
+
+.grey {
+  background-color: #E5E7EB;
+}
+
+.booking {
+  display: flex;
+  border-radius: 10px;
+  margin: 20px 30% 20px 30%;
+  background-color: #3882f6;
+  justify-content: center;
+  padding: 20px;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+
 footer {
   background-color: #1f2937;
   color: white;
