@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="booking.css">
+  </head>
+  <body>
+    <h1>Sign up</h1>
+    <p>
+      Please fill in the following to initialize your booking.
+    </p>
+    <form>
+      <fieldset>
+        <label>Name 
+          <input  
+          type="text" 
+          required 
+          placeholder="Enter your name">
+        </label>
+        <label>Email 
+          <input 
+          type="email" 
+          required 
+          placeholder="Enter your email">
+        </label>
+        <label>Age 
+          <input  
+          type="number" 
+          min="18" 
+          max="100" 
+          placeholder="Enter your age">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Which destination are you interested in?</legend>
+        <select class="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Tunisia</option>
+          <option value="2">China</option>
+          <option value="3">Greenland</option>
+          <option value="4">Brazil</option>
+          <option value="5">Portugal</option>
+          <option value="6">UAE</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Choose the category of the itinerary you're interested in:
+        </legend>
+        <label for="adventure">
+          <input 
+          type="radio" 
+          id="adventure" 
+          class="inline" 
+          checked > Adventure
+        </label>
+        <label for="food">
+          <input 
+          type="radio" 
+          id="food" 
+          class="inline"> Food
+        </label>
+        <label for="family">
+        <input 
+            type="radio" 
+            id="family" 
+            class="inline"> Family
+        </label>
+        <label for="wellness">
+          <input 
+          type="radio" 
+          id="wellness" 
+          class="inline"> Wellness
+        </label>
+        <label for="shopping">
+            <input 
+            type="radio" 
+            id="shopping" 
+            class="inline"> Shopping
+        </label>
+          <label for="honeymoon">
+            <input 
+            type="radio" 
+            id="honeymoon" 
+            class="inline"> Honeymoon
+        </label>
+        <label for="none">
+            <input 
+            type="radio" 
+            id="none" 
+            class="inline"> None
+        </label>
+        
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose your preferred time period:</legend>
+        <label for="q1">
+          <input 
+          id="q1" 
+          type="checkbox"
+          class="inline"> Jan~Mar
+        </label>
+        <label for="q2">
+          <input 
+          id="q2" 
+          type="checkbox"
+          class="inline"> Apr~Jun
+        </label>
+        <label for="q3">
+          <input 
+          id="q3"  
+          type="checkbox"
+          class="inline"> Jul~Sep
+        </label>
+        <label for="q4">
+            <input 
+            id="q4"  
+            type="checkbox"
+            class="inline"> Oct~Dec
+        </label>
+      </fieldset>
+
+        <label for="comment"> Any additional comments?
+          <textarea id="comment" placeholder="Enter your comment here"></textarea>
+        </label>
+      <input type="submit" id="submit">
+    </form> 
+  </body>
+</html>
