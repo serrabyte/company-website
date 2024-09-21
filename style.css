@@ -176,6 +176,14 @@ nav a {
   margin-right: 50px;
 }
 
+.info-section h2 {
+  font-size: 36px
+}
+
+.info-section p {
+  font-size: 24px
+}
+
 .au-separate {
   display: flex;
   flex-direction: column;
