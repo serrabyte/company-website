@@ -443,8 +443,9 @@ footer {
 
 .testimonial_all img {
   border-radius: 50%;
-  width: auto;
+  width: 15%;
   height: 40%;
+  object-fit: cover;
   margin: 0;
   border: solid 5px #1F2937;
 }
