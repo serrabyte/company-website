@@ -28,43 +28,93 @@ nav a {
   font-size: 18px;
 }
 
-img {}
-
+/* Flex container for the welcome section */
 .welcome {
-  display: table;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.one h1,
-.one p {
-  float: left;
-  width: 30%;
-  text-align: center;
-  padding-bottom: 30px;
-  padding-left: 20px;
+/* Text content styling */
+.text-content {
+  width: 50%;
   padding-right: 20px;
 }
 
 .one h1 {
-  padding-top: 30px;
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
-.one img {
-  float: right;
-  width: 70%;
-  height: 315px;
+.one p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Space between buttons */
+}
+
+.button {
+  background-color: #3882f6;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* First button - 25% width */
+.button-group a:nth-child(1) {
+  width: 25%;
+  /* 1/4 of original size */
+}
+
+/* Second button - smaller than the first (20% width) */
+.button-group a:nth-child(2) {
+  width: 20%;
+}
+
+/* Third button - smallest (15% width) */
+.button-group a:nth-child(3) {
+  width: 15%;
+}
+
+/* Styling for the image */
+.welcome img {
+  width: 50%;
+  height: auto;
   object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Styling for the image */
+.welcome img {
+  width: 50%;
+  /* Image takes 50% of the space */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .button {
   /* display: inline-block; */
   background-color: #3882f6;
   color: white;
-  padding: 8px 15px;
+  padding: 8px 5px;
+  margin-right: 10px;
   text-decoration: none;
   border-radius: 5px;
   font-size: 14px;
+  flex-basis: 100%;
+
 }
 
 .two h1 {
@@ -230,8 +280,181 @@ footer {
   background-color: #1f2937;
   color: white;
   padding: 10px;
-  margin: 10px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 1440px) {
+  .one h1 {
+    font-size: 52px;
+  }
+
+  .one p {
+    font-size: 30px;
+  }
+
+  .button-group {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: left;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* Ajustes gerais para telas médias (tablets) */
+  /* .header {
+    flex-direction: column;
+    text-align: center;
+  } */
+
+  nav a {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  .text-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .button-group {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .button-group a {
+    width: 30%;
+  }
+
+  .dest-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dest {
+    width: 90%;
+  }
+
+  .exp .exp-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Ajustes para dispositivos móveis (telas menores que 768px) */
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .welcome {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .text-content {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .button-group {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .button-group a {
+    width: 60%;
+  }
+
+  .dest-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dest {
+    width: 95%;
+  }
+
+  .exp .exp-box {
+    grid-template-columns: 1fr;
+  }
+
+  .exp .exp-box .exp-img img {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Ajustes para telas muito pequenas (smartphones) */
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .one h1 {
+    font-size: 24px;
+  }
+
+  .one p {
+    font-size: 14px;
+  }
+
+  .button-group a {
+    font-size: 12px;
+    width: 100%;
+  }
+  
+  #packages {
+    font-size: 25px;;
+  }
+
+  .dest-container {
+    padding-right: 20px;
+  }
+  .dest-content h3 {
+    font-size: 16px;
+  }
+
+  .dest-content p {
+    font-size: 14px;
+  }
+
+  .exp h1 {
+    font-size: 25px;
+  }
+
+  .exp .exp-box .exp-img img {
+    height: 200px;
+  }
+
+  .exp .exp-box .exp-img p{
+    padding: 50px;
+    font-size: 14px;
+  }
 }
