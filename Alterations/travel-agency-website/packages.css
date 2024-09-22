@@ -94,17 +94,6 @@ nav a {
   border-radius: 8px;
 }
 
-
-.button {
-  background-color: #3882f6;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 14px;
-}
-
 /* Styling for the image */
 .welcome img {
   width: 50%;
@@ -119,10 +108,13 @@ nav a {
   /* display: inline-block; */
   background-color: #3882f6;
   color: white;
-  padding: 8px 15px;
+  padding: 8px 5px;
+  margin-right: 10px;
   text-decoration: none;
   border-radius: 5px;
   font-size: 14px;
+  flex-basis: 100%;
+
 }
 
 .two h1 {
@@ -293,13 +285,29 @@ footer {
   justify-content: center;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1440px) {
+  .one h1 {
+    font-size: 52px;
+  }
+
+  .one p {
+    font-size: 30px;
+  }
+
+  .button-group {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: left;
+  }
+}
+
+@media (min-width: 1024px) {
 
   /* Ajustes gerais para telas médias (tablets) */
-  .header {
+  /* .header {
     flex-direction: column;
     text-align: center;
-  }
+  } */
 
   nav a {
     margin-left: 10px;
@@ -313,7 +321,7 @@ footer {
 
   .button-group {
     flex-direction: row;
-    gap: 5px;
+    gap: 15px;
     justify-content: center;
   }
 
@@ -365,7 +373,7 @@ footer {
   }
 
   .button-group {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     align-items: center;
   }
@@ -419,10 +427,16 @@ footer {
 
   .button-group a {
     font-size: 12px;
-    padding: 10px 15px;
     width: 100%;
   }
+  
+  #packages {
+    font-size: 25px;;
+  }
 
+  .dest-container {
+    padding-right: 20px;
+  }
   .dest-content h3 {
     font-size: 16px;
   }
@@ -432,10 +446,15 @@ footer {
   }
 
   .exp h1 {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   .exp .exp-box .exp-img img {
     height: 200px;
+  }
+
+  .exp .exp-box .exp-img p{
+    padding: 50px;
+    font-size: 14px;
   }
 }
