@@ -204,27 +204,60 @@ nav a {
 }
 
 .au-separate {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  background-color: #e5e7eb;
+  width: 100%;
+  min-height:100vh;
+}
+
+.au-both {
+  width: 80%;
+  display: block;
+  margin:auto;
+  padding-top: 100px;
+  /* padding-bottom: ; */
 }
 
 .au-aboutus {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  float: left;
+  width: 55%;
+}
+.au-img {
+  float: right;
+  width: 40%;
+  /* padding-top: 70px; */
+}
+.au-img img{
+  width:100%;
+  height:auto;
 }
 
 .au-aboutus h2 {
-  font-size: 36px;
+  font-size: 28px;
+  text-transform: uppercase;
   font-weight: bolder;
   color: #1F2937;
 }
 
 .au-aboutus p {
+  margin: 20px auto;
   font-size: 18px;
   font-style: italic;
   color: #1F2937;
+}
+
+.au-aboutus ul {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.au-aboutus h4 {
+  padding-top: 15px;
 }
 
 .au-contact {
@@ -232,7 +265,9 @@ nav a {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: center
+  justify-content: center;
+  width: 80%;
+  padding-top: 60px;
 }
 
 .au-contactmap {
@@ -241,6 +276,12 @@ nav a {
   margin-right: 10%;
   align-items: center;
   justify-content: center;
+  
+}
+
+.au-contactmap img{
+  height:9em;
+  width:100%;
 }
 
 .au-contactmap h2 {
@@ -252,7 +293,7 @@ nav a {
 .au-contactadress {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 23px;
   font-style: italic;
   color: #1F2937;
   justify-content: center;
@@ -588,6 +629,17 @@ footer {
     padding: 10px 20px;
     /* Ajustar tamanho do botão */
   }
+  .au-separate {
+    flex-direction: column;
+    align-items: center;
+  }
+  .au-aboutus {
+    width: 100%;
+  }
+  .au-img {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* Media query para dispositivos menores que 480px (tamanho comum para smartphones) */
@@ -667,4 +719,20 @@ footer {
     padding: 8px 15px;
     /* Ajustar o tamanho do botão em telas pequenas */
   }
+
+  .au-contact {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .au-contactmap {
+    width: 70%;
+  }
+
+  .au-contactadress {
+    width: 70%;
+    padding-right: 20px;
+  }
+  
 }
