@@ -6,6 +6,23 @@
   scroll-behavior: smooth;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .header {
   background-color: #1e2530;
   color: white;
@@ -27,6 +44,7 @@ nav a {
   margin-left: 20px;
   font-size: 18px;
 }
+
 
 /* Flex container for the welcome section */
 .welcome {
@@ -309,10 +327,10 @@ footer {
     text-align: center;
   } */
 
-  nav a {
+  /* nav a {
     margin-left: 10px;
     font-size: 16px;
-  }
+  } */
 
   .text-content {
     width: 100%;
@@ -346,7 +364,7 @@ footer {
 @media (max-width: 768px) {
 
   /* Ajustes para dispositivos móveis (telas menores que 768px) */
-  .header {
+  /* .header {
     flex-direction: column;
     text-align: center;
   }
@@ -354,7 +372,7 @@ footer {
   nav a {
     margin-left: 0;
     margin-top: 10px;
-  }
+  } */
 
   .welcome {
     flex-direction: column;
